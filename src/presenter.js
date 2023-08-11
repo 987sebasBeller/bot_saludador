@@ -1,6 +1,8 @@
-const button = document.querySelector("#btn")
-const div=document.querySelector("#saludo")
+import abreviar from "./abreviador";
+const button = document.querySelector("#btn");
+const div=document.querySelector("#saludo");
+const cbx_gender=document.querySelector("#gender");
+const name_input = document.querySelector("#name_input");
 button.addEventListener("click", ()=>{
-  var name_input = document.querySelector("#name_input")
-  div.innerHTML=`<p>HOLA ${name_input.value} 😃!!</p>`
+  div.innerHTML=`<p>HOLA ${abreviar(cbx_gender.value)} ${name_input.value} 😃!!</p>`;
 });
