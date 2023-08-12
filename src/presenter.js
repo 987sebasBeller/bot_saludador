@@ -12,6 +12,6 @@ button.addEventListener("click", async()=>{
   let age= Number.parseInt(age_input.value);
   let hora=Number.parseInt(fecha.getHours());
   let texto=`${saludar(hora)} ${abreviar(age,cbx_gender.value)} ${name_input.value}` ;
-  texto=await traducir(texto,'en');
+  texto=await traducir(texto,cbx_language.value);
   div.innerHTML=`<p>${texto} 😃!!</p>`;
 });
