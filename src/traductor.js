@@ -1,8 +1,9 @@
 import translate from 'translate';
-const translator =require('translate');
+//const translator =require('translate');
 async function traducir(str,translateTo){
   try{
-  translator.engine='libre';
+  
+  //  translator.engine='libre';
     const translated_string = await  translate(str, {
       from: 'es', 
       to: translateTo

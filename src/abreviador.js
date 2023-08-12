@@ -1,6 +1,5 @@
 function abreviar(edad,genero){
     var abreviacion="Sr";
-    console.log(edad);
     if (edad<30 || isNaN(edad)){
         abreviacion=" ";
     }
