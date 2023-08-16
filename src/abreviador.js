@@ -1,11 +1,15 @@
-function abreviar(edad,genero){
-    var abreviacion="Sr";
+function abreviar(edad,genero,idioma){
+    let diccionario={};
+    diccionario['es']="Sr ";
+    diccionario['en']="Mr ";
     if (edad<30 || isNaN(edad)){
-        abreviacion=" ";
+        return "";
     }
     else if(genero=="F"){
-        abreviacion="Sra";
+        diccionario['es']="Sra ";
+        diccionario['en']="Mrs ";
+        
     }
-    return abreviacion;
+    return diccionario[idioma];
 }
 export default abreviar;
